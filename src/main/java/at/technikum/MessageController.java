@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MessageController {
-     private String defaultMessage = "Everything operates as expected";
-    private String currentMessage = defaultMessage;
+     static String defaultMessage = "Everything operates as expected";
+    static String currentMessage = defaultMessage;
 
     @GetMapping("/api/message")
     public String getMessage() {
