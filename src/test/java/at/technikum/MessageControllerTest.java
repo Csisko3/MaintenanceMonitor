@@ -5,9 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class MessageControllerTest {
-    private final MessageController Message = new MessageController();
 
-    @Test
+        @Test
     void defaultMessage(){
         String ABC = "Everything operates as expected";
 
