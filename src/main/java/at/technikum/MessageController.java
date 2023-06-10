@@ -13,7 +13,7 @@ public class MessageController {
         return currentMessage;
     }
 
-    @PostMapping("/api/message/set")
+    @PutMapping("/api/message/set")
     public String setMessage(@RequestParam String m){
         currentMessage = m;
         return "ok";
