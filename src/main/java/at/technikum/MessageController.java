@@ -14,7 +14,7 @@ public class MessageController {
     }
 
     @PostMapping("/api/message/set")
-    public String setMessage(@RequestParam String set){
+    public String setMessage(@RequestParam("m") String set){
         currentMessage = set;
         return "ok";
     }
