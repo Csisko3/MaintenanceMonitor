@@ -3,7 +3,6 @@ package at.technikum;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import at.technikum.MessageController;
 
 class MessageControllerTest {
 
@@ -16,7 +15,9 @@ class MessageControllerTest {
 
     @Test
     void testSetMessage() {
-        assertEquals(MessageController.currentMessage, MessageController.setMessage(MessageController.currentMessage));
+        String test = "Roland";
+        MessageController.setMessage(test);
+        assertEquals(MessageController.getcurrentMessage(), test);
     }
 
 }

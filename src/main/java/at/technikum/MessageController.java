@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.*;
 public class MessageController {
     static String defaultMessage = "Everything operates as expected";
     static String currentMessage = defaultMessage;
-    static String testMessage;
+
+
     @GetMapping("/api/message")
     public String getMessage() {
         return currentMessage;
@@ -15,10 +16,11 @@ public class MessageController {
 
     @GetMapping("/api/message/set")
     public static String setMessage(@RequestParam String m) {
-        testMessage = m;
         currentMessage = m;
-
         return "ok";
+    }
+    public static String getcurrentMessage(){
+        return currentMessage;
     }
 
 }
