@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+
 class MessageControllerTest {
 
     @Test
@@ -20,4 +21,9 @@ class MessageControllerTest {
         assertEquals(MessageController.getcurrentMessage(), test);
     }
 
+    @Test
+    void testResetMessage() {
+        MessageController.resetMessage();
+        assertEquals(MessageController.getcurrentMessage(),MessageController.getDefaultMessage());
+    }
 }
