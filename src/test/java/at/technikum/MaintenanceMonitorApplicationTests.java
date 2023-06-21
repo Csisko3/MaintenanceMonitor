@@ -1,4 +1,4 @@
-package com.example.maintenancemonitor;
+package at.technikum;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
